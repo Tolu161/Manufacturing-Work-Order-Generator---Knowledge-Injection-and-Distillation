@@ -25,21 +25,15 @@ Knowledge Injection :
 
 
 How does this Mainteance Work Order Generator work 
-🔹 Step 1: Generate Synthetic Data (data.py)
+Step 1: Generate Synthetic Data (data.py) - Creates a CSV file (maintenance_logs.csv) containing sample maintenance issues.
 
-Creates a CSV file (maintenance_logs.csv) containing sample maintenance issues.
-🔹 Step 2: Train the Teacher Model (train_teacher.py)
+Step 2: Train the Teacher Model (train_teacher.py) - Trains BERT (teacher model) on the dataset.
 
-Trains BERT (teacher model) on the dataset.
-🔹 Step 3: Train the LoRA Model (train_lora.py)
+Step 3: Train the LoRA Model (train_lora.py) - Fine-tunes DistilBERT with LoRA adapters for efficiency.
 
-Fine-tunes DistilBERT with LoRA adapters for efficiency.
-🔹 Step 4: Knowledge Distillation (distill_model.py)
+Step 4: Knowledge Distillation (distill_model.py) - Transfers knowledge from BERT (teacher) to DistilBERT (student) to make it smaller and faster.
 
-Transfers knowledge from BERT (teacher) to DistilBERT (student) to make it smaller and faster.
-🔹 Step 5: Run Inference (inference.py)
-
-Uses the trained model to classify issue severity and recommend actions.
+Step 5: Run Inference (inference.py) - Uses the trained model to classify issue severity and recommend actions.
 
 Results from Injection Training : 
 
