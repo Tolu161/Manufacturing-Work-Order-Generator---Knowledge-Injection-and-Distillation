@@ -24,7 +24,8 @@ Knowledge Injection :
 ![image](https://github.com/user-attachments/assets/e5030935-9881-477d-84d9-fe61817e2123)
 
 
-How does this Mainteance Work Order Generator work 
+How does this Mainteance Work Order Generator work : 
+
 Step 1: Generate Synthetic Data (data.py) - Creates a CSV file (maintenance_logs.csv) containing sample maintenance issues.
 
 Step 2: Train the Teacher Model (train_teacher.py) - Trains BERT (teacher model) on the dataset.
